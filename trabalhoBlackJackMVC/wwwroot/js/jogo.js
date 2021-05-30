@@ -90,9 +90,9 @@ function parar2() {
         $(pontoJogador2).text("VENCEU");
         $(pontoJogador1).text("PERDEU");
     } else if (pontoA < 21 && pontoB > 21) {
-    $(pontoJogador1).text("VENCEU");
+        $(pontoJogador1).text("VENCEU");
         $(pontoJogador2).text("PERDEU");
-    } else if (pontoA > 21 && pontoB || pontoA == pontoB) {
+    } else if (pontoA > 21 && pontoB > 21 || pontoA == pontoB) {
         $(pontoJogador2).text("EMPATE");
         $(pontoJogador1).text("EMPATE");
     }

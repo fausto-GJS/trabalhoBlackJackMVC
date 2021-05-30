@@ -86,7 +86,13 @@ function parar2() {
     } else if (pontoB > pontoA && pontoB <= 21) {
         $(pontoJogador2).text("VENCEU");
         $(pontoJogador1).text("PERDEU");
-    } else {
+    } else if (pontoA > 21 && pontoB < 21) {
+        $(pontoJogador2).text("VENCEU");
+        $(pontoJogador1).text("PERDEU");
+    } else if (pontoA < 21 && pontoB > 21) {
+    $(pontoJogador1).text("VENCEU");
+        $(pontoJogador2).text("PERDEU");
+    } else if (pontoA > 21 && pontoB || pontoA == pontoB) {
         $(pontoJogador2).text("EMPATE");
         $(pontoJogador1).text("EMPATE");
     }
